@@ -16,7 +16,7 @@
 <!--Content-->
 	<div class="w3-container w3-light-grey">
 	    <div class="w3-container w3-red" id="header">
-		    <h3>Measure Mass</h3>	
+		    <h3>Measure Mass </h3>	
 	    </div>
 		
 	<div class="w3-container w3-section" id="header-content">
