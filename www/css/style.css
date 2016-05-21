@@ -62,3 +62,26 @@
     display: inline;
 }
 
+/* Caracteristicas de tabla*/
+
+
+
+table{
+	border: 2px solid #000;
+	border-collapse: collapse;
+	
+}
+
+table th{
+	background-color: #0099db;
+}
+
+table td{
+	border: 2px solid #000;
+	padding: 10px;
+	text-align: center;
+}
+
+table tr:hover{
+	background: gray;
+}

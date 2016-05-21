@@ -24,7 +24,11 @@
   			<h2>Complete los datos solicitados</h2>
 		</div>
 		<div class="w3-container w3-section w3-border">
-<form class="w3-container" action="form.asp">
+			
+<!-- <form class="w3-container" method="get" action="form.asp"> -->
+	
+			<form class="w3-container" method="get" action="resultBMI.php">
+			
 <p><label class="w3-label w3-text-grey"><b>Genero</b></label></p>
 <input class="w3-radio" type="radio" name="gender">
 <label class="w3-validate"><img src="img/masculine.png"  width="50px" height="50px"></label>
@@ -45,7 +49,8 @@
 
 	
 		<br>
-		<input type="button" class=" w3-xlarge w3-buttom w3-green w3-hover-blue w3-round-xlarge" onclick="location.href='resultBMI.php'" value="Calcular" name="enter"></input> 
+	<!--	<input type="button" class=" w3-xlarge w3-buttom w3-green w3-hover-blue w3-round-xlarge" "submit" onclick="location.href='resultBMI.php'" value="Calcular" name="enter"></input> -->
+			<button class="buttomCalculo" "submit" name="envia" >Calcular!</button>
 		<br><br>
 			</div>
 		 <div><img src="img/salud.gif"  width="350px" height="200px"></div>

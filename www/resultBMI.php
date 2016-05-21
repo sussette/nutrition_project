@@ -14,6 +14,7 @@ $database = new medoo([
 $data = $database->select("tb_bmi", "*");
 ?>
 
+
 <!doctype html>
 <html>
 
@@ -24,14 +25,12 @@ $data = $database->select("tb_bmi", "*");
 </head>
 
 <body>
-<!--Content-->
+
 <div id="content">
-    <!--Logo-->
+   
     <div id="logo">
     </div>
-    <!--Fim Logo-->
    
-        <!--IMC-->
         <div id="resultado">
         
         <?php 
@@ -39,8 +38,8 @@ $data = $database->select("tb_bmi", "*");
 			
 		$feeding_bread=0;
 			
-		$peso = $_GET['peso'];
-		$altura = $_GET['altura'];
+		$peso = $_GET['first'];
+		$altura = $_GET['last'];
 		
 		$conta1 = $altura*$altura;
 		$conta2 = $peso/$conta1;
@@ -55,35 +54,27 @@ $data = $database->select("tb_bmi", "*");
 		}
 			
 			$len = count($data);
-          /*  for($i=0; $i<$len; $i++){*/
 				
-			 	if($resultado>=$data[0]["BMI_initial_range"] && $resultado<$data[0]["BMI_final_range"]){
+			 	if($resultado>=$data[0]["initial_bmi"] && $resultado<=$data[0]["final_bmi"]){
 					$feeding_bread=0;
-					echo '<h1>peso bajo</h1>';
+					echo '<h1>bajo peso</h1>';
 				}else{
-				if($resultado>=$data[1]["BMI_initial_range"] && $resultado<$data[1]["BMI_final_range"]){
+				if($resultado>=$data[1]["initial_bmi"] && $resultado<=$data[1]["final_bmi"]){
 					$feeding_bread=1;
 					echo '<h1>peso normal</h1>';
 					}else{
-						$feeding_bread=2;
-				echo '<h1>sobrepeso</h1>';
+					 $feeding_bread=2;
+				echo '<h1>sobre peso</h1>';
 				}
-					
-				/*	}*/
-			
 				
-			}
-			
-			
+			}			
 			
 		?>   
            
         </div>
-        <!---Fim IMC-->        
-</div>
-<!--Fim Content-->   
-	<a href="planAlimentacion.php/?$feeding_bread=<?php echo $feeding_bread ?>">Enviar</a>
-	<button class="buttomCalculo" "submit" name="envia" >Ver Plan de  Alimentacion!</button>
+           
+</div>	
+	<button type="button" onclick="location.href='planAlimentacion.php?var=<?php echo $feeding_bread?>'">Ver Plan de  Alimentacion!</button>
     
 </body>
 </html>
