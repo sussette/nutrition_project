@@ -318,7 +318,7 @@ ________________________________________________________________________________
 	Introduccion de los datos a la tabla feeding_plan
 	Plan Bajar de peso
 ______________________________________________________________________________________________________________________*/
-        insert into tb_feeding_plan(id_feeding_plan,id_feeding) values(01, 14);
+        insert into tb_feeding_plan(id_feeding_plan,id_feeding) values(02, 14);
 		insert into tb_feeding_plan(id_feeding_plan,id_feeding) values(02, 15);
 		insert into tb_feeding_plan(id_feeding_plan,id_feeding) values(02, 16);
 		insert into tb_feeding_plan(id_feeding_plan,id_feeding) values(02, 17);
