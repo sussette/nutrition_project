@@ -20,19 +20,23 @@ $data = $database->select("tb_bmi", "*");
 
 <head>
 <meta charset="utf-8">
-<title>Calculadora IMC</title>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<title>Resultado IMC</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
 
 <div id="content">
+  
+    <div class="w3-container w3-red" id="header">
+		    <h3>Measure Mass</h3>	
+   </div>
    
-    <div id="logo">
-    </div>
-   
-        <div id="resultado">
-        
+    <div class="w3-container w3-section" id="header-content">
+	<div id="resultado">
         <?php 
 			
 			
@@ -70,11 +74,30 @@ $data = $database->select("tb_bmi", "*");
 			}			
 			
 		?>   
-           
-        </div>
-           
+     </div>
+	   
+	<input type="button" class=" w3-xlarge w3-buttom w3-red w3-hover-grey w3-round-xlarge"  onclick="location.href='planAlimentacion.php'" style="width:30%" value="Rutina de ejercicio" name="enter"></input> 
+	<button type="button" class=" w3-xlarge w3-buttom w3-red w3-hover-grey w3-round-xlarge" onclick="location.href='planAlimentacion.php?var=<?php echo $feeding_bread?>'" style="width:30%">Rutina de alimentacion</button>
+	
+	</div>
+       
+        <div class="w3-container w3-red" id="footer">
+		    <h2>&#169;CopyRight</h2>
+		
+		    <div class="w3-contanier">
+            <ul>
+                <li class="w3-padding-16"><a href="https://www.instagram.com"><img class="w3-center w3-circle" style="width:40px" src="img/instagram.png"></a></li>
+                <li class="w3-padding-20"><a href="https://www.facebook.com"><img class="w3-center w3-circle" style="width:40px" src="img/facebook.png" ></a></li>
+                <li class="w3-padding-16"><a href="https://accounts.google.com/ServiceLogin?sacu=1&continue=https%3A%2F%2Fphotos.google.com%2Flogin&followup=https%3A%2F%2Fphotos.google.com%2Flogin&osid=1#identifier"><img class="w3-center w3-circle" style="width:40px" src="img/google+.png"></a></li>
+                <li class="w3-padding-16"> <a href="https://twitter.com"><img class="w3-center w3-circle" style="width:40px" src="img/twitter.png" ></a></li>
+            </ul>
+		      
+		        	
+		        	
+		       	
+		    </div>
+        </div>  
 </div>	
-	<button type="button" onclick="location.href='planAlimentacion.php?var=<?php echo $feeding_bread?>'">Ver Plan de  Alimentacion!</button>
-    
+<!--Fim Content-->  
 </body>
 </html>
