@@ -113,3 +113,50 @@ div.containerCard {
     padding: 10px;
     background-color: white;
 }
+
+#calcBMI-section {
+    text-align: center;
+}
+
+#calc-section1 label,#calc-section2 label{
+    width: 25%;
+}
+
+#calc-section1 input,#calc-section2 input{
+    width: 50%;
+}
+
+#textBMI-section{
+    padding: 2.5%;
+}
+#calcBMI-section {
+    text-align: center;
+    padding: 10%;
+}
+
+#BMI-section h3{
+    text-align: center;
+    color: #686666;
+}
+
+.male-icon{
+     background: url(../img/male.png) ;
+     width: 64px;
+     height: 64px;
+     top: 10px;
+     position: relative;
+    background-color: #9AD6A4;
+}
+
+.female-icon{
+    background: url(../img/female.png);
+    width: 64px;
+    height: 64px;
+    top: 10px;
+    position: relative;
+    background-color: #D69AA6;
+}
+
+#gender-section{
+    height: 90px;
+}

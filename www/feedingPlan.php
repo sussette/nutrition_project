@@ -35,8 +35,9 @@ $data = $database->select("tb_feeding_plan", [
 
 <head>
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"> 
+    <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel=-shortcut icon- href=/img/logoIcon.ico />
     <title>Measure Mass</title>
 	
 	

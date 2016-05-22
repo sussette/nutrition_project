@@ -20,10 +20,10 @@ $data = $database->select("tb_bmi", "*");
    <head>
     <meta charset="utf-8">
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel=-shortcut icon- href=/img/logoIcon.ico />
     <title>Resultado IMC</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
 
 <body>

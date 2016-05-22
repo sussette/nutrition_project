@@ -557,17 +557,17 @@ insert into tb_exercises_routine(id_routine, id_exercise) values(15,2);
 Inserts of plan_routine_BMI
 BMI: Bajo peso
 */
-insert into tb_plan_routines_bmi(id_plan_routines, id_BMI) values (0,0);
+insert into tb_plan_routines_bmi(id_plan_routines, id_BMI) values (0,00);
 
 /*
 BMI: Normal
 */
-insert into tb_plan_routines_bmi(id_plan_routines, id_BMI) values (1,1);
+insert into tb_plan_routines_bmi(id_plan_routines, id_BMI) values (1,01);
 
 /*
 BMI: Sobre peso
 */
-insert into tb_plan_routines_bmi(id_plan_routines, id_BMI) values (2,2);
+insert into tb_plan_routines_bmi(id_plan_routines, id_BMI) values (2,02);
 
 /*
 Inserts of plan_routines

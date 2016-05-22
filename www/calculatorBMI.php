@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>Measure Mass</title>
-	<link rel=-shortcut icon- href=/img/ima.ico />
+	<link rel=-shortcut icon- href=/img/logoIcon.ico />
 </head>
     
 <body>
@@ -18,40 +18,59 @@
 	    <div class="w3-container w3-section" id="header-content">
 	    
 	    <div class="w3-container w3-teal">
-  			<h2>Complete los datos solicitados</h2>
+  			<h2>Índice de masa corporal</h2>
 		</div>
 		
 		<div class="w3-container w3-section w3-border">
 		<!-- <form class="w3-container" method="get" action="form.asp"> -->
 		
-		<form class="w3-container" method="get" action="resultBMI.php">
-			<p><label class="w3-label w3-text-white"><b>Genero</b></label></p>
-			
-			<input class="w3-radio" type="radio" name="gender">
-			<label class="w3-validate"><img src="img/masculine.png"  width="50px" height="50px"></label>
-			<input class="w3-radio" type="radio" name="gender">
-			<label class="w3-validate"><img src="img/femenine.png"  width="50px" height="50px"></label>
-			
-			<p>
-			<label class="w3-label w3-text-white "><b>Peso</b></label>
-			<input class="w3-input w3-border w3-sand" name="first" type="text">
-			<label class="w3-label w3-text-grey "><b>Kg</b></label>
-			</p>
-            <p>      
-            <label class="w3-label w3-text-white"><b>Estatura</b></label>
-            <input class="w3-input w3-border w3-sand" name="last" type="text">
-            <label class="w3-label w3-text-grey"><b>Cm</b></label>
-            </p>
-            
-            <br>
-	        <!--	<input type="button" class=" w3-xlarge w3-buttom w3-green w3-hover-blue w3-round-xlarge" "submit" onclick="location.href='resultBMI.php'" value="Calcular" name="enter"></input> -->
-			<button class=" w3-xlarge w3-buttom w3-blue-grey w3-hover-blue w3-round-xlarge" "submit" name="envia" >Calcular</button>
-		    <br><br>
-		    
-        </div>
-			<div><img src="img/salud.gif"  width="350px" height="200px"></div>
-        </form>
+		<div id="BMI-section" class="w3-container">
+                  
+                   <div id="textBMI-section" class=" w3-row-padding w3-third ">
+                    <p>El Índice de Masa Corporal (IMC) es una herramienta con la que se puede determinar, a partir de la estatura y peso de una persona, si su peso se encuentra en un nivel saludable.</p>
+                    <img class="w3-round" src="../nutrition_project/img/logo.ico" alt="">
+                    </div>
+                
+                    <div id="calcBMI-section" class=" w3-row-padding w3-twothird">
+                    <h3>Llene los campos para calcular su IMC:</h3>
+                       
+                        <form class="w3-container" method="get" action="resultBMI.php">
+		
+                        <div id="calc-section1" class="w3-row-container w3-section">
+                            
+                            <label class="w3-label w3-text-white"><b>Peso:</b></label>
+                            <input class=" w3-border  w3-round-large" type="number" step="any" name="first">
+                            <label class="w3-label w3-text-grey"><b>Kg</b></label>
+                        </div>
+                         
+                         
+                        <div id="calc-section2" class="w3-row-container w3-section">
+                            <label class="w3-label w3-text-white"><b>Altura:</b></label>
+                            <input class=" w3-border  w3-round-large" type="number" step="any"  name="last">
+                            <label class="w3-label w3-text-grey"><b>m</b></label>
+                        </div>
+                        
+                        <div id="gender-section" class="w3-row-container w3-section">
+                               <input class="w3-radio" type="radio" name="gender" value="male" checked>
+                               <img class=" w3-circle male-icon" alt="">
 
+                                <input class="w3-radio" type="radio" name="gender" value="female">
+                                <i></i>
+                                <img class=" w3-circle female-icon" alt="">
+                        </div>
+                    </div>
+                    
+                   
+                       <div class="w3-container w3-section">
+                        <button class=" w3-xlarge w3-buttom w3-blue-grey w3-hover-blue w3-round-xlarge" "submit" name="envia" >Calcular</button>
+                        </div>
+                    </form>
+                       
+                        
+        
+                  </div>
+            </div>
+		
         </div>
         <div class="w3-container w3-teal" id="footer">
         

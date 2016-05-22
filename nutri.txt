@@ -1,0 +1,3 @@
+u269309337_nutri nombre de la bd
+u269309337_susse usuario mysql
+rhcert pass

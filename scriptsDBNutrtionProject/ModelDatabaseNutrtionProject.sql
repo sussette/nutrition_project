@@ -16,7 +16,7 @@ primary key (id_BMI));
 CREATE TABLE tb_exercise (
 id_exercise int(10),
 name varchar (50),
-description varchar(50),
+description varchar(1000),
 primary key(id_exercise));
 
 CREATE TABLE tb_routine (
