@@ -576,7 +576,7 @@ BMI: Bajo peso
 insert into tb_plan_routines(id_plan_routines, id_routine) values(0,1);
 insert into tb_plan_routines(id_plan_routines, id_routine) values(0,2);
 insert into tb_plan_routines(id_plan_routines, id_routine) values(0,3);
-insert into tb_plan_routines(id_plan_routines, id_routine) values(0,4);
+insert into tb_plan_routines(id_plan_routines, id_routine) values(0,4);s
 insert into tb_plan_routines(id_plan_routines, id_routine) values(0,5);
 
 /*
