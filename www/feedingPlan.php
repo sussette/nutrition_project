@@ -11,10 +11,6 @@ $database = new medoo([
 	'charset' => 'utf8'
 ]);
 
-
-	
-
-
 $data = $database->select("tb_feeding_plan", [
 		  "[><]tb_feeding" => ["id_feeding" => "id_feeding"]
 		],[
@@ -29,18 +25,10 @@ $data = $database->select("tb_feeding_plan", [
 			"tb_feeding.lunch",
 			"tb_feeding.dinner"
 	],[
-	 "id_feeding_plan" =>   $_GET["var"]
-	
-												
+	 "id_feeding_plan" =>   $_GET["var"]												
 		]);
 		
 ?>
-
-
-
-
-
-
 
 <!DOCTYPE html>
 <html lang="es">
@@ -56,10 +44,9 @@ $data = $database->select("tb_feeding_plan", [
     
 <body>
    
- 
-   <!--Content-->
+    <!--Content-->
     <div class="w3-container w3-blue-grey">
-	    <div class="w3-container w3-red" id="header">
+	    <div class="w3-container w3-teal" id="header">
 		    <h2>Plan de alimentación </h2>
 		    <h3>Measure Mass</h3>	
 			
@@ -70,7 +57,6 @@ $data = $database->select("tb_feeding_plan", [
 			
 		<table>
 			<tr>
-				<th>ID</th>
 				<th>Día</th>
 				<th>Desayuno</th>
 				<th>Merienda</th>
@@ -84,7 +70,6 @@ $data = $database->select("tb_feeding_plan", [
                 $len = count($data);
                 for($i=0; $i<$len; $i++){
                     echo  "<tr>
-					<td>".$data[$i]["id_feeding"]."</td>
 					<td>".$data[$i]["day"]."</td>
 					<td>".$data[$i]["morningSnack"]."</td>
 					<td>".$data[$i]["breakfast"]."</td>
@@ -97,14 +82,10 @@ $data = $database->select("tb_feeding_plan", [
 				
 			 
 			</table>
-			
-			
-			
+				
 		</div>
-	    
-		   
-	
-	   <div class="w3-container w3-red" id="footer">
+	   
+	   <div class="w3-container w3-teal" id="footer">
 		    <h2>&#169;CopyRight</h2>
 		
 		    <div class="w3-contanier">
@@ -114,14 +95,10 @@ $data = $database->select("tb_feeding_plan", [
                 <li class="w3-padding-16"><a href="https://accounts.google.com/ServiceLogin?sacu=1&continue=https%3A%2F%2Fphotos.google.com%2Flogin&followup=https%3A%2F%2Fphotos.google.com%2Flogin&osid=1#identifier"><img class="w3-center w3-circle" style="width:40px" src="img/google+.png"></a></li>
                 <li class="w3-padding-16"> <a href="https://twitter.com"><img class="w3-center w3-circle" style="width:40px" src="img/twitter.png" ></a></li>
             </ul>
-		      
-		        	
-		        	
-		       	
+		      		       	
 		    </div>
         </div>
     </div>  
 </body>
     
-
 </html
