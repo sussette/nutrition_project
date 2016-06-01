@@ -1,47 +1,13 @@
-@font-face {
-    font-family: 'NotoBold';
-    src: url('../fonts/notosans-bold-webfont.eot');
-    src: url('../fonts/notosans-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/notosans-bold-webfont.woff2') format('woff2'),
-         url('../fonts/notosans-bold-webfont.woff') format('woff'),
-         url('../fonts/notosans-bold-webfont.ttf') format('truetype'),
-         url('../fonts/notosans-bold-webfont.svg#noto_sansbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 
-@font-face {
-    font-family: 'NotoItalic';
-    src: url('../fonts/notosans-italic-webfont.eot');
-    src: url('../fonts/notosans-italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/notosans-italic-webfont.woff2') format('woff2'),
-         url('../fonts/notosans-italic-webfont.woff') format('woff'),
-         url('../fonts/notosans-italic-webfont.ttf') format('truetype'),
-         url('../fonts/notosans-italic-webfont.svg#noto_sansitalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'NotoRegular';
-    src: url('../fonts/notosans-regular-webfont.eot');
-    src: url('../fonts/notosans-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/notosans-regular-webfont.woff2') format('woff2'),
-         url('../fonts/notosans-regular-webfont.woff') format('woff'),
-         url('../fonts/notosans-regular-webfont.ttf') format('truetype'),
-         url('../fonts/notosans-regular-webfont.svg#noto_sansregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-#header h2{
-    float: left;
-}
 
 #header h3{
     float: right;
 }
+#header h2{
+    float: left;
+}
+
+
 
 #header-content{
    /* height: 600px;*/
@@ -49,6 +15,23 @@
     text-align: center;
 }
 
+#header-content h3{
+ color: #131857;
+    font-family: sans-serif;
+    font-size: 40px;
+}
+
+#header-content .input{
+ width: 25%;
+ height: 100px;
+    font-size: 30px;
+}
+
+#header-content .input2{
+ width: 50%;
+ height: 60px;
+ font-size: 30px;
+}
 #footer h2{
     float: right;
 }
@@ -64,17 +47,40 @@
 
 /* Caracteristicas de tabla*/
 
+nav{
+    background: #091238;
+}
+
+.navbar-header span{
+    background: #5E73CC;
+}
+.navbar a{
+    color: #5E73CC;
+}
+
+
+.color{
+    background: #EBCA8A;
+}
 
 
 table{
 	border: 2px solid #000;
 	border-collapse: collapse;
-	background-color: #9e9e9e;
+	 background:#D2B899;
 }
 
 table th{
-	background-color: darkcyan;
+	background: #f78f1e;
+    color: #FFF;
+    text-align: center;
 }
+
+table tr{
+	color: #000;
+}
+
+
 
 table td{
 	border: 2px solid #000;
@@ -118,12 +124,28 @@ div.containerCard {
     text-align: center;
 }
 
+#calc-section1 .left ,#calc-section2 .left  {
+    text-align: left;
+}
+
+#calc-section1 .right ,#calc-section2 .right  {
+    text-align: right;
+}
+
+
 #calc-section1 label,#calc-section2 label{
-    width: 25%;
+    width: 20%;
+    font-size: 20px;
 }
 
 #calc-section1 input,#calc-section2 input{
     width: 50%;
+    height: 30px;
+}
+
+#gender-section input{
+    width: 10%;
+    height: 30px;
 }
 
 #textBMI-section{
@@ -131,12 +153,11 @@ div.containerCard {
 }
 #calcBMI-section {
     text-align: center;
-    padding: 10%;
 }
 
 #BMI-section h3{
     text-align: center;
-    color: #686666;
+    color:#091238;
 }
 
 .male-icon{
