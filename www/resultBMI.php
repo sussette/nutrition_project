@@ -82,10 +82,12 @@ $data = $database->select("tb_bmi", "*");
          <input   type="hidden"  name="var" value="<?php echo $feeding_bread?>">
          <button type="submit" class=" btn-lg btn w3-blue-grey w3-hover-blue w3-round-xlarge input">Rutina de alimentacion</button>
      </form>
-         <button type="button" class=" btn-lg btn w3-blue-grey w3-hover-blue w3-round-xlarge input"  onclick="location.href='exercisesRoutine.php'">Rutina de ejercicio</button>
-         
-         
      
+     <form action="exercisesRoutine.php" method="post">
+         <input   type="hidden"  name="var" value="<?php echo $feeding_bread?>">
+         <button type="submit" class=" btn-lg btn w3-blue-grey w3-hover-blue w3-round-xlarge input">Rutina de ejercicio</button>
+     </form>    
+         
 	 </div>
        
         <div class="w3-container w3-teal" id="footer">
