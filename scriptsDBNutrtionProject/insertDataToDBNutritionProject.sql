@@ -374,226 +374,361 @@ insert into tb_exercise(id_exercise, name, description) values(39, 'Estocada', '
 insert into tb_exercise(id_exercise, name, description) values(40, 'Remo renegado', 'Levante una mancuerna hacia un lado del cuerpo mientras mantiene el equilibrio con la otra mano y el otro pie. Mantenga la mancuerna arriba durante un segundo y regrese lentamente a la posición inicial para repetir el ejercicio con el otro lado.');
 
 /*
-Inserts of rutine
-BMI: Bajo peso
+Inserts of routine
 */
-insert into tb_routine(id_routine, day) values(1, 'Lunes');
-insert into tb_routine(id_routine, day) values(2, 'Martes');
-insert into tb_routine(id_routine, day) values(3, 'Miercoles');
-insert into tb_routine(id_routine, day) values(4, 'Jueves');
-insert into tb_routine(id_routine, day) values(5, 'Viernes');
-/*
-BMI: Normal
-*/
-insert into tb_routine(id_routine, day) values(6, 'Lunes');
-insert into tb_routine(id_routine, day) values(7, 'Martes');
-insert into tb_routine(id_routine, day) values(8, 'Miercoles');
-insert into tb_routine(id_routine, day) values(9, 'Jueves');
-insert into tb_routine(id_routine, day) values(10, 'Viernes');
-/*
-BMI: Sobre peso
-*/
-insert into tb_routine(id_routine, day) values(11, 'Lunes');
-insert into tb_routine(id_routine, day) values(12, 'Martes');
-insert into tb_routine(id_routine, day) values(13, 'Miercoles');
-insert into tb_routine(id_routine, day) values(14, 'Jueves');
-insert into tb_routine(id_routine, day) values(15, 'Viernes');
+insert into tb_day(id_day, day) values(0, 'Lunes');
+insert into tb_day(id_day, day) values(1, 'Martes');
+insert into tb_day(id_day, day) values(2, 'Miercoles');
+insert into tb_day(id_day, day) values(3, 'Jueves');
+insert into tb_day(id_day, day) values(4, 'Viernes');
+insert into tb_day(id_day, day) values(5, 'Sabado');
+insert into tb_day(id_day, day) values(6, 'Domimgo');
+
+insert into tb_routine(id_routine, idBMI, id_day) values (0,0);
+insert into tb_routine(id_routine, idBMI, id_day) values (1,0);
+insert into tb_routine(id_routine, idBMI, id_day) values (2,0);
+insert into tb_routine(id_routine, idBMI, id_day) values (3,0);
+insert into tb_routine(id_routine, idBMI, id_day) values (4,0);
+insert into tb_routine(id_routine, idBMI, id_day) values (5,0);
+insert into tb_routine(id_routine, idBMI, id_day) values (6,0);
+
+insert into tb_routine(id_routine, idBMI, id_day) values (7,1);
+insert into tb_routine(id_routine, idBMI, id_day) values (8,1);
+insert into tb_routine(id_routine, idBMI, id_day) values (9,1);
+insert into tb_routine(id_routine, idBMI, id_day) values (10,1);
+insert into tb_routine(id_routine, idBMI, id_day) values (11,1);
+insert into tb_routine(id_routine, idBMI, id_day) values (12,1);
+insert into tb_routine(id_routine, idBMI, id_day) values (13,1);
+
+insert into tb_routine(id_routine, idBMI, id_day) values (14,1);
+insert into tb_routine(id_routine, idBMI, id_day) values (15,1);
+insert into tb_routine(id_routine, idBMI, id_day) values (16,1);
+insert into tb_routine(id_routine, idBMI, id_day) values (17,1);
+insert into tb_routine(id_routine, idBMI, id_day) values (18,1);
+insert into tb_routine(id_routine, idBMI, id_day) values (19,1);
+insert into tb_routine(id_routine, idBMI, id_day) values (20,1);
+
 
 /*
 Inserts exercises_routine
 BMI: Bajo peso
 Day: Lunes
 */
-insert into tb_exercises_routine(id_routine, id_exercise) values(1,1);
-insert into tb_exercises_routine(id_routine, id_exercise) values(1,2);
-insert into tb_exercises_routine(id_routine, id_exercise) values(1,3);
-insert into tb_exercises_routine(id_routine, id_exercise) values(1,4);
-insert into tb_exercises_routine(id_routine, id_exercise) values(1,5);
-insert into tb_exercises_routine(id_routine, id_exercise) values(1,6);
-insert into tb_exercises_routine(id_routine, id_exercise) values(1,7);
-insert into tb_exercises_routine(id_routine, id_exercise) values(1,8);
-insert into tb_exercises_routine(id_routine, id_exercise) values(1,9);
-insert into tb_exercises_routine(id_routine, id_exercise) values(1,10);
-insert into tb_exercises_routine(id_routine, id_exercise) values(1,11);
-insert into tb_exercises_routine(id_routine, id_exercise) values(1,12);
-insert into tb_exercises_routine(id_routine, id_exercise) values(1,13);
-insert into tb_exercises_routine(id_routine, id_exercise) values(1,14);
-insert into tb_exercises_routine(id_routine, id_exercise) values(1,15);
-insert into tb_exercises_routine(id_routine, id_exercise) values(1,16);
+insert into tb_exercises_routine(id_routine, id_exercise) values(0,1);
+insert into tb_exercises_routine(id_routine, id_exercise) values(0,2);
+insert into tb_exercises_routine(id_routine, id_exercise) values(0,3);
+insert into tb_exercises_routine(id_routine, id_exercise) values(0,4);
+insert into tb_exercises_routine(id_routine, id_exercise) values(0,5);
+insert into tb_exercises_routine(id_routine, id_exercise) values(0,6);
+insert into tb_exercises_routine(id_routine, id_exercise) values(0,7);
+insert into tb_exercises_routine(id_routine, id_exercise) values(0,8);
+insert into tb_exercises_routine(id_routine, id_exercise) values(0,9);
+insert into tb_exercises_routine(id_routine, id_exercise) values(0,10);
+insert into tb_exercises_routine(id_routine, id_exercise) values(0,11);
+insert into tb_exercises_routine(id_routine, id_exercise) values(0,12);
+insert into tb_exercises_routine(id_routine, id_exercise) values(0,13);
+insert into tb_exercises_routine(id_routine, id_exercise) values(0,14);
+insert into tb_exercises_routine(id_routine, id_exercise) values(0,15);
+insert into tb_exercises_routine(id_routine, id_exercise) values(0,16);
 
 /*
 Day: Martes
 */
-insert into tb_exercises_routine(id_routine, id_exercise) values(2,17);
-insert into tb_exercises_routine(id_routine, id_exercise) values(2,18);
-insert into tb_exercises_routine(id_routine, id_exercise) values(2,19);
-insert into tb_exercises_routine(id_routine, id_exercise) values(2,20);
-insert into tb_exercises_routine(id_routine, id_exercise) values(2,21);
-insert into tb_exercises_routine(id_routine, id_exercise) values(2,22);
-insert into tb_exercises_routine(id_routine, id_exercise) values(2,23);
+insert into tb_exercises_routine(id_routine, id_exercise) values(1,17);
+insert into tb_exercises_routine(id_routine, id_exercise) values(1,18);
+insert into tb_exercises_routine(id_routine, id_exercise) values(1,19);
+insert into tb_exercises_routine(id_routine, id_exercise) values(1,20);
+insert into tb_exercises_routine(id_routine, id_exercise) values(1,21);
+insert into tb_exercises_routine(id_routine, id_exercise) values(1,22);
+insert into tb_exercises_routine(id_routine, id_exercise) values(1,23);
 
 /*
 Day: Miercoles
 */
-insert into tb_exercises_routine(id_routine, id_exercise) values(3,1);
-insert into tb_exercises_routine(id_routine, id_exercise) values(3,2);
-insert into tb_exercises_routine(id_routine, id_exercise) values(3,6);
-insert into tb_exercises_routine(id_routine, id_exercise) values(3,4);
-insert into tb_exercises_routine(id_routine, id_exercise) values(3,24);
-insert into tb_exercises_routine(id_routine, id_exercise) values(3,25);
-insert into tb_exercises_routine(id_routine, id_exercise) values(3,26);
+insert into tb_exercises_routine(id_routine, id_exercise) values(2,1);
+insert into tb_exercises_routine(id_routine, id_exercise) values(2,2);
+insert into tb_exercises_routine(id_routine, id_exercise) values(2,6);
+insert into tb_exercises_routine(id_routine, id_exercise) values(2,4);
+insert into tb_exercises_routine(id_routine, id_exercise) values(2,24);
+insert into tb_exercises_routine(id_routine, id_exercise) values(2,25);
+insert into tb_exercises_routine(id_routine, id_exercise) values(2,26);
 
 /*
 Day: Jueves
 */
-insert into tb_exercises_routine(id_routine, id_exercise) values(4,9);
-insert into tb_exercises_routine(id_routine, id_exercise) values(4,27);
-insert into tb_exercises_routine(id_routine, id_exercise) values(4,11);
-insert into tb_exercises_routine(id_routine, id_exercise) values(4,12);
-insert into tb_exercises_routine(id_routine, id_exercise) values(4,14);
-insert into tb_exercises_routine(id_routine, id_exercise) values(4,28);
-insert into tb_exercises_routine(id_routine, id_exercise) values(4,29);
-insert into tb_exercises_routine(id_routine, id_exercise) values(4,30);
-insert into tb_exercises_routine(id_routine, id_exercise) values(4,8);
+insert into tb_exercises_routine(id_routine, id_exercise) values(3,9);
+insert into tb_exercises_routine(id_routine, id_exercise) values(3,27);
+insert into tb_exercises_routine(id_routine, id_exercise) values(3,11);
+insert into tb_exercises_routine(id_routine, id_exercise) values(3,12);
+insert into tb_exercises_routine(id_routine, id_exercise) values(3,14);
+insert into tb_exercises_routine(id_routine, id_exercise) values(3,28);
+insert into tb_exercises_routine(id_routine, id_exercise) values(3,29);
+insert into tb_exercises_routine(id_routine, id_exercise) values(3,30);
+insert into tb_exercises_routine(id_routine, id_exercise) values(3,8);
 
 /*
 Day: Viernes
 */
-insert into tb_exercises_routine(id_routine, id_exercise) values(5,6);
+insert into tb_exercises_routine(id_routine, id_exercise) values(4,6);
+insert into tb_exercises_routine(id_routine, id_exercise) values(4,2);
+insert into tb_exercises_routine(id_routine, id_exercise) values(4,3);
+insert into tb_exercises_routine(id_routine, id_exercise) values(4,4);
+insert into tb_exercises_routine(id_routine, id_exercise) values(4,8);
+insert into tb_exercises_routine(id_routine, id_exercise) values(4,31);
+
+/*
+Day: Sabado Yeimi
+*/
+insert into tb_exercises_routine(id_routine, id_exercise) values(5,40);
+insert into tb_exercises_routine(id_routine, id_exercise) values(5,39);
+insert into tb_exercises_routine(id_routine, id_exercise) values(5,38);
+insert into tb_exercises_routine(id_routine, id_exercise) values(5,28);
+insert into tb_exercises_routine(id_routine, id_exercise) values(5,17);
+insert into tb_exercises_routine(id_routine, id_exercise) values(5,10);
+insert into tb_exercises_routine(id_routine, id_exercise) values(5,9);
 insert into tb_exercises_routine(id_routine, id_exercise) values(5,2);
-insert into tb_exercises_routine(id_routine, id_exercise) values(5,3);
-insert into tb_exercises_routine(id_routine, id_exercise) values(5,4);
-insert into tb_exercises_routine(id_routine, id_exercise) values(5,8);
-insert into tb_exercises_routine(id_routine, id_exercise) values(5,31);
+
+/*
+Day: Domingo Yeimi
+*/
+insert into tb_exercises_routine(id_routine, id_exercise) values(6,40);
+insert into tb_exercises_routine(id_routine, id_exercise) values(6,39);
+insert into tb_exercises_routine(id_routine, id_exercise) values(6,38);
+insert into tb_exercises_routine(id_routine, id_exercise) values(6,28);
+insert into tb_exercises_routine(id_routine, id_exercise) values(6,17);
+insert into tb_exercises_routine(id_routine, id_exercise) values(6,10);
+insert into tb_exercises_routine(id_routine, id_exercise) values(6,9);
+insert into tb_exercises_routine(id_routine, id_exercise) values(6,2);
 
 /*
 BMI: Normal
 Day: Lunes
 */
-insert into tb_exercises_routine(id_routine, id_exercise) values(6,34);
-insert into tb_exercises_routine(id_routine, id_exercise) values(6,2);
-insert into tb_exercises_routine(id_routine, id_exercise) values(6,8);
-insert into tb_exercises_routine(id_routine, id_exercise) values(6,19);
-insert into tb_exercises_routine(id_routine, id_exercise) values(6,32);
-insert into tb_exercises_routine(id_routine, id_exercise) values(6,33);
+insert into tb_exercises_routine(id_routine, id_exercise) values(0,34);
+insert into tb_exercises_routine(id_routine, id_exercise) values(0,2);
+insert into tb_exercises_routine(id_routine, id_exercise) values(0,8);
+insert into tb_exercises_routine(id_routine, id_exercise) values(0,19);
+insert into tb_exercises_routine(id_routine, id_exercise) values(0,32);
+insert into tb_exercises_routine(id_routine, id_exercise) values(0,33);
 
 /*
 Day: Martes
 */
-insert into tb_exercises_routine(id_routine, id_exercise) values(7,35);
-insert into tb_exercises_routine(id_routine, id_exercise) values(7,2);
-insert into tb_exercises_routine(id_routine, id_exercise) values(7,8);
-insert into tb_exercises_routine(id_routine, id_exercise) values(7,24);
-insert into tb_exercises_routine(id_routine, id_exercise) values(7,26);
+insert into tb_exercises_routine(id_routine, id_exercise) values(1,35);
+insert into tb_exercises_routine(id_routine, id_exercise) values(1,2);
+insert into tb_exercises_routine(id_routine, id_exercise) values(1,8);
+insert into tb_exercises_routine(id_routine, id_exercise) values(1,24);
+insert into tb_exercises_routine(id_routine, id_exercise) values(1,26);
 
 /*
 Day: Miercoles
 */
-insert into tb_exercises_routine(id_routine, id_exercise) values(8,35);
-insert into tb_exercises_routine(id_routine, id_exercise) values(8,36);
-insert into tb_exercises_routine(id_routine, id_exercise) values(8,6);
-insert into tb_exercises_routine(id_routine, id_exercise) values(8,37);
-insert into tb_exercises_routine(id_routine, id_exercise) values(8,38);
-insert into tb_exercises_routine(id_routine, id_exercise) values(8,39);
+insert into tb_exercises_routine(id_routine, id_exercise) values(2,35);
+insert into tb_exercises_routine(id_routine, id_exercise) values(2,36);
+insert into tb_exercises_routine(id_routine, id_exercise) values(2,6);
+insert into tb_exercises_routine(id_routine, id_exercise) values(2,37);
+insert into tb_exercises_routine(id_routine, id_exercise) values(2,38);
+insert into tb_exercises_routine(id_routine, id_exercise) values(2,39);
 
 /*
 Day: Jueves
 */
-insert into tb_exercises_routine(id_routine, id_exercise) values(9,8);
-insert into tb_exercises_routine(id_routine, id_exercise) values(9,2);
-insert into tb_exercises_routine(id_routine, id_exercise) values(9,36);
-insert into tb_exercises_routine(id_routine, id_exercise) values(9,19);
-insert into tb_exercises_routine(id_routine, id_exercise) values(9,32);
-insert into tb_exercises_routine(id_routine, id_exercise) values(9,24);
+insert into tb_exercises_routine(id_routine, id_exercise) values(3,8);
+insert into tb_exercises_routine(id_routine, id_exercise) values(3,2);
+insert into tb_exercises_routine(id_routine, id_exercise) values(3,36);
+insert into tb_exercises_routine(id_routine, id_exercise) values(3,19);
+insert into tb_exercises_routine(id_routine, id_exercise) values(3,32);
+insert into tb_exercises_routine(id_routine, id_exercise) values(3,24);
 
 /*
 Day: Viernes
 */
-insert into tb_exercises_routine(id_routine, id_exercise) values(10,8);
-insert into tb_exercises_routine(id_routine, id_exercise) values(10,2);
-insert into tb_exercises_routine(id_routine, id_exercise) values(10,6);
-insert into tb_exercises_routine(id_routine, id_exercise) values(10,19);
-insert into tb_exercises_routine(id_routine, id_exercise) values(10,32);
-insert into tb_exercises_routine(id_routine, id_exercise) values(10,35);
+insert into tb_exercises_routine(id_routine, id_exercise) values(4,8);
+insert into tb_exercises_routine(id_routine, id_exercise) values(4,2);
+insert into tb_exercises_routine(id_routine, id_exercise) values(4,6);
+insert into tb_exercises_routine(id_routine, id_exercise) values(4,19);
+insert into tb_exercises_routine(id_routine, id_exercise) values(4,32);
+insert into tb_exercises_routine(id_routine, id_exercise) values(4,35);
+
+/*
+Day: Sabado Yeimi
+*/
+insert into tb_exercises_routine(id_routine, id_exercise) values(5,40);
+insert into tb_exercises_routine(id_routine, id_exercise) values(5,39);
+insert into tb_exercises_routine(id_routine, id_exercise) values(5,38);
+insert into tb_exercises_routine(id_routine, id_exercise) values(5,28);
+insert into tb_exercises_routine(id_routine, id_exercise) values(5,17);
+insert into tb_exercises_routine(id_routine, id_exercise) values(5,10);
+insert into tb_exercises_routine(id_routine, id_exercise) values(5,9);
+insert into tb_exercises_routine(id_routine, id_exercise) values(5,2);
+
+/*
+Day: Domingo Yeimi
+*/
+insert into tb_exercises_routine(id_routine, id_exercise) values(6,40);
+insert into tb_exercises_routine(id_routine, id_exercise) values(6,39);
+insert into tb_exercises_routine(id_routine, id_exercise) values(6,38);
+insert into tb_exercises_routine(id_routine, id_exercise) values(6,28);
+insert into tb_exercises_routine(id_routine, id_exercise) values(6,17);
+insert into tb_exercises_routine(id_routine, id_exercise) values(6,10);
+insert into tb_exercises_routine(id_routine, id_exercise) values(6,9);
+insert into tb_exercises_routine(id_routine, id_exercise) values(6,2);
 
 /*
 BMI: Sobre peso
 Day: Lunes
 */
-insert into tb_exercises_routine(id_routine, id_exercise) values(11,40);
-insert into tb_exercises_routine(id_routine, id_exercise) values(11,39);
-insert into tb_exercises_routine(id_routine, id_exercise) values(11,38);
-insert into tb_exercises_routine(id_routine, id_exercise) values(11,28);
-insert into tb_exercises_routine(id_routine, id_exercise) values(11,17);
-insert into tb_exercises_routine(id_routine, id_exercise) values(11,10);
-insert into tb_exercises_routine(id_routine, id_exercise) values(11,9);
-insert into tb_exercises_routine(id_routine, id_exercise) values(11,2);
+insert into tb_exercises_routine(id_routine, id_exercise) values(0,40);
+insert into tb_exercises_routine(id_routine, id_exercise) values(0,39);
+insert into tb_exercises_routine(id_routine, id_exercise) values(0,38);
+insert into tb_exercises_routine(id_routine, id_exercise) values(0,28);
+insert into tb_exercises_routine(id_routine, id_exercise) values(0,17);
+insert into tb_exercises_routine(id_routine, id_exercise) values(0,10);
+insert into tb_exercises_routine(id_routine, id_exercise) values(0,9);
+insert into tb_exercises_routine(id_routine, id_exercise) values(0,2);
+
+/*
+Day: Martes Yeimi
+*/
+insert into tb_exercises_routine(id_routine, id_exercise) values(1,40);
+insert into tb_exercises_routine(id_routine, id_exercise) values(1,39);
+insert into tb_exercises_routine(id_routine, id_exercise) values(1,38);
+insert into tb_exercises_routine(id_routine, id_exercise) values(1,28);
+insert into tb_exercises_routine(id_routine, id_exercise) values(1,17);
+insert into tb_exercises_routine(id_routine, id_exercise) values(1,10);
+insert into tb_exercises_routine(id_routine, id_exercise) values(1,9);
+insert into tb_exercises_routine(id_routine, id_exercise) values(1,2);
 
 /*
 Day: Miercoles
 */
-insert into tb_exercises_routine(id_routine, id_exercise) values(13,40);
-insert into tb_exercises_routine(id_routine, id_exercise) values(13,39);
-insert into tb_exercises_routine(id_routine, id_exercise) values(13,38);
-insert into tb_exercises_routine(id_routine, id_exercise) values(13,28);
-insert into tb_exercises_routine(id_routine, id_exercise) values(13,17);
-insert into tb_exercises_routine(id_routine, id_exercise) values(13,10);
-insert into tb_exercises_routine(id_routine, id_exercise) values(13,9);
-insert into tb_exercises_routine(id_routine, id_exercise) values(13,2);
+insert into tb_exercises_routine(id_routine, id_exercise) values(2,40);
+insert into tb_exercises_routine(id_routine, id_exercise) values(2,39);
+insert into tb_exercises_routine(id_routine, id_exercise) values(2,38);
+insert into tb_exercises_routine(id_routine, id_exercise) values(2,28);
+insert into tb_exercises_routine(id_routine, id_exercise) values(2,17);
+insert into tb_exercises_routine(id_routine, id_exercise) values(2,10);
+insert into tb_exercises_routine(id_routine, id_exercise) values(2,9);
+insert into tb_exercises_routine(id_routine, id_exercise) values(2,2);
+
+/*
+Day: Jueves Yeimi
+*/
+insert into tb_exercises_routine(id_routine, id_exercise) values(3,40);
+insert into tb_exercises_routine(id_routine, id_exercise) values(3,39);
+insert into tb_exercises_routine(id_routine, id_exercise) values(3,38);
+insert into tb_exercises_routine(id_routine, id_exercise) values(3,28);
+insert into tb_exercises_routine(id_routine, id_exercise) values(3,17);
+insert into tb_exercises_routine(id_routine, id_exercise) values(3,10);
+insert into tb_exercises_routine(id_routine, id_exercise) values(3,9);
+insert into tb_exercises_routine(id_routine, id_exercise) values(3,2);
 
 /*
 Day: Viernes
 */
-insert into tb_exercises_routine(id_routine, id_exercise) values(15,40);
-insert into tb_exercises_routine(id_routine, id_exercise) values(15,39);
-insert into tb_exercises_routine(id_routine, id_exercise) values(15,38);
-insert into tb_exercises_routine(id_routine, id_exercise) values(15,28);
-insert into tb_exercises_routine(id_routine, id_exercise) values(15,17);
-insert into tb_exercises_routine(id_routine, id_exercise) values(15,10);
-insert into tb_exercises_routine(id_routine, id_exercise) values(15,9);
-insert into tb_exercises_routine(id_routine, id_exercise) values(15,2);
+insert into tb_exercises_routine(id_routine, id_exercise) values(4,40);
+insert into tb_exercises_routine(id_routine, id_exercise) values(4,39);
+insert into tb_exercises_routine(id_routine, id_exercise) values(4,38);
+insert into tb_exercises_routine(id_routine, id_exercise) values(4,28);
+insert into tb_exercises_routine(id_routine, id_exercise) values(4,17);
+insert into tb_exercises_routine(id_routine, id_exercise) values(4,10);
+insert into tb_exercises_routine(id_routine, id_exercise) values(4,9);
+insert into tb_exercises_routine(id_routine, id_exercise) values(4,2);
+
+/*
+Day: Sabado Yeimi
+*/
+insert into tb_exercises_routine(id_routine, id_exercise) values(5,40);
+insert into tb_exercises_routine(id_routine, id_exercise) values(5,39);
+insert into tb_exercises_routine(id_routine, id_exercise) values(5,38);
+insert into tb_exercises_routine(id_routine, id_exercise) values(5,28);
+insert into tb_exercises_routine(id_routine, id_exercise) values(5,17);
+insert into tb_exercises_routine(id_routine, id_exercise) values(5,10);
+insert into tb_exercises_routine(id_routine, id_exercise) values(5,9);
+insert into tb_exercises_routine(id_routine, id_exercise) values(5,2);
+
+/*
+Day: Domingo Yeimi
+*/
+insert into tb_exercises_routine(id_routine, id_exercise) values(6,40);
+insert into tb_exercises_routine(id_routine, id_exercise) values(6,39);
+insert into tb_exercises_routine(id_routine, id_exercise) values(6,38);
+insert into tb_exercises_routine(id_routine, id_exercise) values(6,28);
+insert into tb_exercises_routine(id_routine, id_exercise) values(6,17);
+insert into tb_exercises_routine(id_routine, id_exercise) values(6,10);
+insert into tb_exercises_routine(id_routine, id_exercise) values(6,9);
+insert into tb_exercises_routine(id_routine, id_exercise) values(6,2);
+
+/*
+Day: Sabado Yeimi
+*/
+insert into tb_exercises_routine(id_routine, id_exercise) values(5,40);
+insert into tb_exercises_routine(id_routine, id_exercise) values(5,39);
+insert into tb_exercises_routine(id_routine, id_exercise) values(5,38);
+insert into tb_exercises_routine(id_routine, id_exercise) values(5,28);
+insert into tb_exercises_routine(id_routine, id_exercise) values(5,17);
+insert into tb_exercises_routine(id_routine, id_exercise) values(5,10);
+insert into tb_exercises_routine(id_routine, id_exercise) values(5,9);
+insert into tb_exercises_routine(id_routine, id_exercise) values(5,2);
+
+/*
+Day: Domingo Yeimi
+*/
+insert into tb_exercises_routine(id_routine, id_exercise) values(6,40);
+insert into tb_exercises_routine(id_routine, id_exercise) values(6,39);
+insert into tb_exercises_routine(id_routine, id_exercise) values(6,38);
+insert into tb_exercises_routine(id_routine, id_exercise) values(6,28);
+insert into tb_exercises_routine(id_routine, id_exercise) values(6,17);
+insert into tb_exercises_routine(id_routine, id_exercise) values(6,10);
+insert into tb_exercises_routine(id_routine, id_exercise) values(6,9);
+insert into tb_exercises_routine(id_routine, id_exercise) values(6,2);
 
 /*
 Inserts of plan_routine_BMI
 BMI: Bajo peso
 */
-insert into tb_plan_routines_bmi(id_plan_routines, id_BMI) values (0,00);
+insert into tb_plan_routines_bmi(id_plan_routines, id_BMI) values (00,00);
 
 /*
 BMI: Normal
 */
-insert into tb_plan_routines_bmi(id_plan_routines, id_BMI) values (1,01);
+insert into tb_plan_routines_bmi(id_plan_routines, id_BMI) values (01,01);
 
 /*
 BMI: Sobre peso
 */
-insert into tb_plan_routines_bmi(id_plan_routines, id_BMI) values (2,02);
+insert into tb_plan_routines_bmi(id_plan_routines, id_BMI) values (02,02);
 
 /*
 Inserts of plan_routines
 BMI: Bajo peso
 */
+insert into tb_plan_routines(id_plan_routines, id_routine) values(0,0);
 insert into tb_plan_routines(id_plan_routines, id_routine) values(0,1);
 insert into tb_plan_routines(id_plan_routines, id_routine) values(0,2);
 insert into tb_plan_routines(id_plan_routines, id_routine) values(0,3);
-insert into tb_plan_routines(id_plan_routines, id_routine) values(0,4);s
+insert into tb_plan_routines(id_plan_routines, id_routine) values(0,4);
 insert into tb_plan_routines(id_plan_routines, id_routine) values(0,5);
+insert into tb_plan_routines(id_plan_routines, id_routine) values(0,6);
 
 /*
 BMI: Normal
 */
+insert into tb_plan_routines(id_plan_routines, id_routine) values(1,0);
+insert into tb_plan_routines(id_plan_routines, id_routine) values(1,1);
+insert into tb_plan_routines(id_plan_routines, id_routine) values(1,2);
+insert into tb_plan_routines(id_plan_routines, id_routine) values(1,3);
+insert into tb_plan_routines(id_plan_routines, id_routine) values(1,4);
+insert into tb_plan_routines(id_plan_routines, id_routine) values(1,5);
 insert into tb_plan_routines(id_plan_routines, id_routine) values(1,6);
-insert into tb_plan_routines(id_plan_routines, id_routine) values(1,7);
-insert into tb_plan_routines(id_plan_routines, id_routine) values(1,8);
-insert into tb_plan_routines(id_plan_routines, id_routine) values(1,9);
-insert into tb_plan_routines(id_plan_routines, id_routine) values(1,10);
-
 /*
 BMI: Sobre peso
 */
-insert into tb_plan_routines(id_plan_routines, id_routine) values(2,11);
-insert into tb_plan_routines(id_plan_routines, id_routine) values(2,12);
-insert into tb_plan_routines(id_plan_routines, id_routine) values(2,13);
-insert into tb_plan_routines(id_plan_routines, id_routine) values(2,14);
-insert into tb_plan_routines(id_plan_routines, id_routine) values(2,15);
+insert into tb_plan_routines(id_plan_routines, id_routine) values(2,0);
+insert into tb_plan_routines(id_plan_routines, id_routine) values(2,1);
+insert into tb_plan_routines(id_plan_routines, id_routine) values(2,2);
+insert into tb_plan_routines(id_plan_routines, id_routine) values(2,3);
+insert into tb_plan_routines(id_plan_routines, id_routine) values(2,4);
+insert into tb_plan_routines(id_plan_routines, id_routine) values(2,5);
+insert into tb_plan_routines(id_plan_routines, id_routine) values(2,6);
 		

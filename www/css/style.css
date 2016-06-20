@@ -1,183 +1,85 @@
-
-
-#header h3{
-    float: right;
-}
-#header h2{
-    float: left;
+.repo{
+    height: 50px;
 }
 
+#menu{
+    margin-bottom: 0;
+}
 
+#home{
+    height: 1024px; 
+    background: green;
+}
 
-#header-content{
-   /* height: 600px;*/
-    padding: 10px;
+#services{
+    height: 1024px;
+    background: yellow;
+}
+
+#services h3{
+    margin-bottom: 30px;
+}
+
+#input{
     text-align: center;
+    padding: 5px;
+    margin-top: 25px;
 }
 
-#header-content h3{
- color: #131857;
-    font-family: sans-serif;
-    font-size: 40px;
-}
-
-#header-content .input{
- width: 25%;
- height: 100px;
-    font-size: 30px;
-}
-
-#header-content .input2{
- width: 50%;
- height: 60px;
- font-size: 30px;
-}
-#footer h2{
-    float: right;
-}
-
-#footer ul{
-    float: left;
-    list-style-type: none;
-}
-
-#footer ul li{
-    display: inline;
-}
-
-/* Caracteristicas de tabla*/
-
-nav{
-    background: #091238;
-}
-
-.navbar-header span{
-    background: #5E73CC;
-}
-.navbar a{
-    color: #5E73CC;
-}
-
-
-.color{
-    background: #EBCA8A;
-}
-
-
-table{
-	border: 2px solid #000;
-	border-collapse: collapse;
-	 background:#D2B899;
-}
-
-table th{
-	background: #f78f1e;
-    color: #FFF;
-    text-align: center;
-}
-
-table tr{
-	color: #000;
-}
-
-
-
-table td{
-	border: 2px solid #000;
-	padding: 10px;
-	text-align: center;
-}
-
-table tr:hover{
-	background: gray;
-}
-
-#header-content p{
-    color: white;
-    font-size: 20px;
-}
-
-#card {
-    margin: 10% 40% 10% 40%;
-}
-
-#measureMassCard {
-    width: 250px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: center;
-    
-}
-
-div.headerCard {
-    background-color: darkcyan;
-    color: white;
-    padding: 10px;
-    font-size: 40px;
-}
-
-div.containerCard {
-    padding: 10px;
-    background-color: white;
-}
-
-#calcBMI-section {
-    text-align: center;
-}
-
-#calc-section1 .left ,#calc-section2 .left  {
-    text-align: left;
-}
-
-#calc-section1 .right ,#calc-section2 .right  {
-    text-align: right;
-}
-
-
-#calc-section1 label,#calc-section2 label{
-    width: 20%;
-    font-size: 20px;
-}
-
-#calc-section1 input,#calc-section2 input{
-    width: 50%;
-    height: 30px;
-}
-
-#gender-section input{
-    width: 10%;
-    height: 30px;
-}
-
-#textBMI-section{
-    padding: 2.5%;
-}
-#calcBMI-section {
-    text-align: center;
-}
-
-#BMI-section h3{
-    text-align: center;
-    color:#091238;
-}
 
 .male-icon{
-     background: url(../img/male.png) ;
-     width: 64px;
-     height: 64px;
-     top: 10px;
-     position: relative;
+    background: url(../img/male.png) ;
+    width: 66px;
+    height: 66px;
     background-color: #9AD6A4;
 }
 
 .female-icon{
     background: url(../img/female.png);
-    width: 64px;
-    height: 64px;
-    top: 10px;
-    position: relative;
+    width: 66px;
+    height: 66px;
     background-color: #D69AA6;
 }
 
-#gender-section{
-    height: 90px;
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
 }
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#result{
+    height: 500px;
+    background: blue;
+    display: none;
+  
+}
+
+
+#about{
+     height: 1024px;
+    background: red;
+}
+
+#feedingPlan {
+    height: 500px;
+    background: blue;
+    display: none;  
+}
+
