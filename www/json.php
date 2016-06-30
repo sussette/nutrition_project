@@ -6,20 +6,27 @@ require 'medoo.php';
 $database = new medoo([
 	// required
 	'database_type' => 'mysql',
-	'database_name' => 'nutrition_project',
-	'server' => 'localhost',
-	'username' => 'root',
-	'password' => 'root',
+	'database_name' => 'u730260015_app8',
+	'server' => 'mysql.hostinger.mx',
+	'username' => 'u730260015_app8',
+	'password' => 'rhcert',
 	'charset' => 'utf8'
 ]);
 
+
+
 $BMI = $database->select("tb_bmi", ["id_BMI","description","initial_bmi","final_bmi"]);
 
-if($_POST){
-    if($_POST["param"] == "ctrl"){
-        createJSON($BMI);
+
+ if($_POST){
+        
+        if($_POST["param"] == "ctrl"){
+            createJSON($BMI);
+        }    
+        
     }
-}
+
+
 
 function createJSON($data){
     $length = count($data);
@@ -35,5 +42,6 @@ function createJSON($data){
         }
         echo json_encode($items);
     }
+
 
 ?>

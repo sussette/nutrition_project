@@ -6,7 +6,9 @@
     
     <title>Measure Mass</title>
     
+<!-- < <link rel="stylesheet" href="bootstrap-3.3.6/css/bootstrap.min.css">-->
   <link rel="stylesheet" href="bootstrap-3.3.6/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="bootstrap-3.3.6/css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
   
   <script src="jq/jquery-1.12.4.min.js"></script>
@@ -29,13 +31,11 @@
         
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#home" data-toggle="collapse" data-target="#myNavbar">Home</a></li>
-            <li><a href="#services" data-toggle="collapse" data-target="#myNavbar">Services</a></li>
-            <li ><a href="#about" data-toggle="collapse" data-target="#myNavbar">About</a></li>
+            <li><a href="#home" data-toggle="collapse" data-target="#myNavbar">Inicio</a></li>
+            <li><a href="#services" data-toggle="collapse" data-target="#myNavbar">Calcular <br>IMC</a></li>
+            <li><a href="#about" data-toggle="collapse" data-target="#myNavbar">Acerca <br> IMC</a></li>
           </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="javascript:window.close();"><span class="glyphicon glyphicon-log-out"></span> Exit</a></li>
-          </ul>
+          
         </div>
         
       </div>
@@ -45,7 +45,7 @@
        <div class="container-fluid repo"></div>
        
        
-        <div id="myCarousel" class=" container carousel slide" data-ride="carousel">
+        <div id="myCarousel" class="container carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -55,22 +55,35 @@
     </ol>
 
     <!-- Wrapper for slides -->
+    <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active container-fluid">
         <img src="img/img-1.jpg" alt="Chania"  width="100%" height="200px">
       </div>
-
       <div class="item container-fluid">
         <img src="img/img-2.jpg" alt="Chania" width="100%" height="200px" >
       </div>
     
       <div class="item container-fluid">
-        <img src="img_flower.jpg" alt="Flower" width="100%" height="200px">
+        <img src="img/ejercicio1.jpg" alt="Flower" width="100%" height="200px">
       </div>
 
       <div class="item container-fluid">
-        <img src="img_flower2.jpg" alt="Flower" width="100%" height="200px">
+        <img src="img/ejercicios2.jpg" alt="Flower" width="100%" height="200px">
       </div>
+		
+		 <div class="item container-fluid">
+        <img src="img/ejercicios3.jpg" alt="Flower" width="100%" height="200px">
+      </div>
+		
+		 <div class="item container-fluid">
+        <img src="img/ejercicios5.jpg" alt="Flower" width="100%" height="200px">
+      </div>
+		
+		 <div class="item container-fluid">
+        <img src="img/ejercicios7.jpg" alt="Flower" width="100%" height="200px">
+      </div>
+		
     </div>
 
     <!-- Left and right controls -->
@@ -87,19 +100,23 @@
  
   
   <section  id="services" class="container-fluid">
-     <div class="container-fluid repo"></div>
-     <h3>Ingrese sus datos para calcular IMC:</h3>
-   <form class="form-horizontal" role="form">
+     <div class="container-fluid repo"></div> 
+     
+     <div class="container">
+		 <center>
+     <h3>Ingrese sus datos para calcular su IMC:</h3>
+			 </center>
+    <form class="form-horizontal" role="form">
     
             <div class="form-group">        
               <div class="col-sm-3 col-md-3 col-xs-3">
-                    <input class="form-control" type="radio" name="gender" value="male" checked>  
+                    <input class="form-control" type="radio" name="gender" value="male" onclick="analyt1()">  
                </div>
                <div class="col-sm-3 col-md-3 col-xs-3">
                     <img class=" img-circle male-icon" alt="">
                </div>
             <div class="col-sm-3 col-md-3 col-xs-3">
-                    <input class="form-control" type="radio" name="gender" value="female">       
+                    <input class="form-control" type="radio" name="gender" value="female" onclick="analyt2()">       
               </div>
               <div class="col-sm-3 col-md-3 col-xs-3">
                     <img class=" img-circle female-icon" alt="">
@@ -107,15 +124,15 @@
             </div>
 
             <div class="form-group">
-              <label class="control-label col-sm-3 col-xs-3 col-md-3">Peso:</label>
+              <label class="control-label2 col-sm-3 col-xs-3 col-md-3">Peso:</label>
               <div class="col-sm-6 col-xs-6 col-md-6">
-                <input type="number" class="form-control" id="weight" placeholder=" Ejemplo: 70 " required="true" step="any" min="55" max="400">
+                <input type="number" class="form-control" id="weight" placeholder=" Ejemplo: 70 " required="true" step="any" min="40" max="400">
               </div>
               <label class="control-label col-sm-3 col-xs-3 col-md-3">Kg</label>
             </div>
 
             <div class="form-group">
-              <label class="control-label col-sm-3 col-xs-3 col-md-3" >Altura:</label>
+              <label class="control-label2 col-sm-3 col-xs-3 col-md-3" >Altura:</label>
               <div class="col-sm-6 col-xs-6 col-md-6">          
                 <input type="number" class="form-control" id="height" placeholder=" Ejemplo: 179 " required="true" min="145" max="300">
               </div>
@@ -124,38 +141,190 @@
 
             <div id="input" class="form-group">        
               <div class="col-sm-12 col-md-12 col-xs-12">
-                <button type="submit" class="btn btn-default button" id="validate" onclick="calculate()">Calcular</button>
+                <button type="button" class="btn btn-default button" id="validate" onclick="analyt3(), calculate()" >Calcular</button>
               </div>
             </div>
        </form>
+       </div>
      
-     
-        <div class="row" id="result">
-		
-        <div class="col-sm-6 col-xs-6 col-md-6">             
-                  <button type="button" class="btn btn-primary"  
-                  onclick="location.href='exercisesRoutine.php'">Rutina de ejercicio</button>
-        </div>
-        <div class="col-sm-6 col-xs-6 col-md-6" style=" text-align: center;">
-             <button type="submit" class="btn btn-default button" id="showPlan" 
-             onclick="feedingPlan()">Plan de alimentacion</button>
-        </div>
-		</div> <!--Closing the class with id = result -->
+     <center>
+        <div class=" container-fluid " id="result">
+           <div class="jumbotron">
+            <div id="resultBMI"></div>
+           </div>
         
-        <div class="row" id="feedingPlan">
-            
-        </div>
+		   <div class="row">
+            <div class="col-sm-4 ">             
+                  
+             </div>
+             <div class="col-sm-4 ">             
+                  <button type="button" class="btn btn-default buttonStandard"  
+                  onclick="exercisePlan()">Rutina de ejercicios</button>
+             </div>
+             <div class="col-sm-4 ">
+               <button type="submit" class="btn btn-default buttonStandard" id="showPlan" 
+                onclick="feedingPlan('lunes')">Plan de alimentacion</button>
+             </div>
+          </div>
+		</div> 
+    </center>
+    
   </section>
-  
+	
+	
+	<section id="show" class="container-fluid">
+		
+          
+           <nav id="menuFeed" class="navbar navbar-inverse">
+                  <div class="container-fluid">
 
-  
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#feedMenu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                      </button>
+                      <b>Menu</b>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="feedMenu">
+                      <ul class="nav navbar-nav">
+
+                          <li><a data-toggle="collapse" data-target="#feedMenu" onclick="feedingPlan('lunes')">Lunes</a></li>
+                          <li><a data-toggle="collapse" data-target="#feedMenu" onclick="feedingPlan('martes')">Martes</a></li>
+                          <li><a data-toggle="collapse" data-target="#feedMenu"  onclick="feedingPlan('miercoles')">Miercoles</a></li> 
+                          <li><a data-toggle="collapse" data-target="#feedMenu"  onclick="feedingPlan('jueves')">Jueves</a></li> 
+                          <li><a data-toggle="collapse" data-target="#feedMenu"  onclick="feedingPlan('viernes')">Viernes</a></li> 
+                          <li><a data-toggle="collapse" data-target="#feedMenu" onclick="feedingPlan('sabado')">Sabado</a></li> 
+                          <li><a data-toggle="collapse" data-target="#feedMenu" onclick="feedingPlan('domingo')">Domingo</a></li> 
+                      </ul>
+
+                    </div>
+
+                  </div>
+          </nav>
+          
+          <div class="table-responsive">
+           
+           <table id="table-feeding" class="table" >
+             
+              
+           </table>
+           
+           <table id="table-exercise" class="table" >
+             
+            
+           </table>
+           
+           </div>
+
+	</section>
+
+
   <section  id="about" class="container-fluid">
-       <div class="container-fluid repo"></div>
+      <div class="row">
+      
+       <div class="col-sm-12 col-xs-12 col-md-12" style=";">  
+        <p class="data-content" >
+		<strong >Indice de Masa Coporal</strong>
+		<br><br>Es un sencillo índice sobre la relación entre el peso y la altura, generalmente utilizado para clasificar el peso insuficiente, el peso excesivo y la obesidad en las personas adultas. <br><br>
+	  
+	  <table class="table-responsive container-fluid" id="h">
+    <thead>
+      <tr>
+        <th>IMC</th>
+        <th>Quiere Decir</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Menor a 18.5</td>
+        <td>Peso Bajo</td>
+      </tr>
+      <tr>
+        <td>18.5 a 24.9</td>
+        <td>Peso Normal</td>
+      </tr>
+      <tr>
+        <td>25 a 29.9</td>
+        <td>Sobre Peso</td>
+      </tr>
+      
+      <tr>
+        <td>30 a 34.9</td>
+        <td>Obesidad Grado I</td>
+      </tr>
+      
+      <tr >
+        <td>35 a 39.9</td>
+        <td>Obesidad Grado II</td>
+      </tr>
+      
+      <tr>
+        <td>Igual o mayor a 40</td>
+        <td>Obesidad Grado III</td>
+      </tr>
+    </tbody>
+    
+    <span class="border"></span>
+  </table>
+  
+        <p class="data-content" >
+		<strong >Mision</strong>
+		<br><br>Nuestra empresa es un grupo de comunicacion especializado en salud que desarrolla soluciones integrales las personas que desean mantener una vida saludable a partir del calculo de su respectivo IMC (Indice de Masa Corporal). <br><br>
+	  
+	      </p>
+	  
+	  
+	   <p class="data-content" >
+		<strong >Vision</strong>
+		<br><br>Mejorar los habitos que tiene las personas con respecto a su alimentacion y actividad fisica, convirtiendo esos habitos en saludables permitiendo asi, una mejor calidad de vida en dichas personas.
+	  </p>       
+        </div>
+    </div>      
+               
   </section>
   
    
 <script src="js/jquery-2.2.4.min.js"></script>
 <script src="js/main.js"></script>
-  
+
+<!--
+    Script de analytics
+-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77418960-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script>
+    function analyt1(){
+        ga('send', 'event', 'clicks', 'clickeadoRBTNHombre', 'Hombres');
+    }
+</script>
+
+<script>
+    function analyt2(){
+        ga('send', 'event', 'clicks', 'clickeadoRBTNMujer', 'Mujeres');
+    }
+</script>
+
+<script>
+    function analyt3(){
+        ga('send', 'event', 'clicks', 'clickeadoBTNCalcular', 'Proceso calcular iniciado');
+    }
+</script>
+
+<!--
+    Script de analytics
+-->
+     
+      
 </body>
 </html>

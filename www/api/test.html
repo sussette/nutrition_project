@@ -1,0 +1,135 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <title>Testing API calls</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<style>
+body{ font-family: Arial; }
+  pre {
+        font-family: "Courier 10 Pitch", Courier, monospace;
+        font-size: 95%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+    }       
+    
+    code {
+        font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+        font-size: 95%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        background: #faf8f0;
+    }
+
+    .green{ color:red; font-weight: bold;}
+    .purple{ color:#3498db; font-weight: bold; margin: 0 10px;}
+    .attr{ color:#e67e22; font-weight: bold; margin: 0 20px;}
+
+</style>
+
+<body>
+  
+  <div id="test">
+      <table id="data">
+          <tr>
+              <th>DESAYUNO</th>
+              <th>SNACK</th>
+              <th>ALMUERZO</th>
+              <th>SNACK</th>
+              <th>DINNER</th>
+          </tr>
+      </table>
+  </div>
+
+  <script src="js/jquery-1.12.3.min.js"></script>
+  
+  <script>
+        
+      (function() {
+          
+        $.ajax({
+          url: 'http://localhost/Proyecto/api',
+          type: 'GET',
+          dataType:"json",
+            success: function(data) {
+                var len = data.length;
+                
+                for(var i=0;i<len;i++){
+                    $('#data').append("<tr><td>"+data[i].breakfast+"</td></tr>")
+                }
+              },
+            error: function(jqXHR, textStatus, error) {
+              alert( "error: " + jqXHR.responseText);
+            }
+        });
+      })();
+      
+  </script>
+  <h1>SIMPLE API CALLS</h1>
+  <p>To start using this API, please review the available operations and parameters.</p>
+  <ul>
+
+    <li>
+      <b>/all</b> you should use this operation to retrieve all the registered items in the application.
+      <ul>
+        <li><b>parameters:</b> none.</li>
+        <li><b>response format:</b> array - JSON</li>
+      </ul>
+    </li>
+
+    <li>
+      <b>/gender/:id</b> you should use this operation to retrieve items according to 'gender'.
+      <ul>
+          <li><b>parameters:</b> gender id (m or f).</li>
+          <li><b>response format:</b> array - JSON</li>
+        </ul>
+    </li>
+
+    <li>
+      <b>/depto/:id</b> you should use this operation to retrieve items according to department.
+      <ul>
+          <li><b>parameters:</b> department id (integer number).</li>
+          <li><b>response format:</b> array - JSON</li>
+        </ul>
+    </li>
+
+    <li>
+      <b>/search/:keyword</b> you should use this operation to search a registered user according to 'name' or 'lastname'.
+      <ul>
+          <li><b>parameters:</b> department id (integer number).</li>
+          <li><b>response format:</b> array - JSON</li>
+        </ul>
+    </li>
+    <h4>JSON response example</h4>
+    <p><pre><code><span class="green">[</span>
+<span class="purple">{</span>
+<span class="attr">name</span>: "Ricky",
+<span class="attr">lastname</span>: "Lucas",
+<span class="attr">gender</span>: "m",
+<span class="attr">profile</span>: "profile/rlucas.jpg",
+<span class="attr">depto</span>: "Contabilidad"
+<span class="purple">}</span>,
+<span class="purple">{</span>
+<span class="attr">name</span>: "Martha",
+<span class="attr">lastname</span>: "Nelson",
+<span class="attr">gender</span>: "f",
+<span class="attr">profile</span>: "profile/mnelson.jpg",
+<span class="attr">depto</span>: "Proveeduria"
+<span class="purple">}</span>
+<span class="green">]</span></code></pre></p>
+
+  </ul>
+</body>
+</html>

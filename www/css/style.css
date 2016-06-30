@@ -1,3 +1,54 @@
+/*** fonts ***/
+@font-face { font-family: 'Lato Light'; font-style: normal; font-weight: 300; src: local('Lato Light'), local('Lato-Light'), url(../fonts/Lato-Light.ttf) format('truetype'), url(../fonts/Lato-Light.woff) format('woff'), url(../fonts/Lato-Light.woff2) format('woff2'); }
+
+@font-face { font-family: 'Lato Regular'; font-style: normal; font-weight: 400; src: url(../fonts/Lato-Regular.eot); src: local('Lato Regular'), local('Lato-Regular'), local('Lato'), url(../fonts/Lato-Regular.ttf) format('truetype'), url(../fonts/Lato-Regular.svg#Lato) format('svg'), url(../fonts/Lato-Regular.eot?#iefix) format('embedded-opentype'), url(../fonts/Lato-Regular.woff) format('woff'), url(../fonts/Lato-Regular.woff2) format('woff2'); }
+
+@font-face { font-family: 'Lato Black'; font-style: normal; font-weight: 900; src: local('Lato Black'), local('Lato-Black'), url(../fonts/Lato-Black.ttf) format('truetype'), url(../fonts/Lato-Black.woff) format('woff'), url(../fonts/Lato-Black.woff2) format('woff2'); }
+
+@font-face { font-family: 'Lato Light Italic'; font-style: italic; font-weight: 300; src: local('Lato Light Italic'), local('Lato-LightItalic'), url(../fonts/Lato-Light-Italic.ttf) format('truetype'), url(../fonts/Lato-Light-Italic.woff) format('woff'), url(../fonts/Lato-Light-Italic.woff2) format('woff2'); }
+
+@font-face {
+    font-family: 'NotoBold';
+    src: url('../fonts/notosans-bold-webfont.eot');
+    src: url('../fonts/notosans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/notosans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/notosans-bold-webfont.woff') format('woff'),
+         url('../fonts/notosans-bold-webfont.ttf') format('truetype'),
+         url('../fonts/notosans-bold-webfont.svg#noto_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoItalic';
+    src: url('../fonts/notosans-italic-webfont.eot');
+    src: url('../fonts/notosans-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/notosans-italic-webfont.woff2') format('woff2'),
+         url('../fonts/notosans-italic-webfont.woff') format('woff'),
+         url('../fonts/notosans-italic-webfont.ttf') format('truetype'),
+         url('../fonts/notosans-italic-webfont.svg#noto_sansitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoRegular';
+    src: url('../fonts/notosans-regular-webfont.eot');
+    src: url('../fonts/notosans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/notosans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/notosans-regular-webfont.woff') format('woff'),
+         url('../fonts/notosans-regular-webfont.ttf') format('truetype'),
+         url('../fonts/notosans-regular-webfont.svg#noto_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*** fonts ***/
+
+.col-sm-4 {
+    width: 100%;
+    margin-bottom: 1%;
+}
+
 .repo{
     height: 50px;
 }
@@ -7,17 +58,23 @@
 }
 
 #home{
-    height: 1024px; 
-    background: green;
+   
+    background: cornsilk;
 }
 
 #services{
-    height: 1024px;
-    background: yellow;
+
+    background: lemonchiffon;
+    color: #896a59;
+    font-family: 'Lato Light';
 }
 
 #services h3{
     margin-bottom: 30px;
+    font-family: 'Lato Black';
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #896a59;
 }
 
 #input{
@@ -49,37 +106,201 @@
   text-align: center;
   text-decoration: none;
   outline: none;
-  color: #fff;
-  background-color: #4CAF50;
-  border: none;
+  color: orangered;
+  border-color: orangered;
+  border-width: 5px;
+  border-style: solid;
   border-radius: 15px;
-  box-shadow: 0 9px #999;
+  font-family: -webkit-body;
+font-weight: bold;
 }
 
-.button:hover {background-color: #3e8e41}
+.buttonStandard {
+    width: 275px;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: orangered;
+  border-color: orangered;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 15px;
+  font-family: -webkit-body;
+font-weight: bold;
+}
+
+.button:hover {
+    border-color: darkturquoise;
+    color: darkturquoise;
+}
 
 .button:active {
-  background-color: #3e8e41;
+  background-color: #FF8F00;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
 
 #result{
-    height: 500px;
-    background: blue;
+    padding-top: 2%;
+    background: bisque;
     display: none;
-  
+    color: #B26400;
+    font-size: 20px;
+    padding-bottom: 2%;
+}
+
+#t h2{
+	margin-top: 10px;
+	color: #896a59;
+	
+}
+
+.button1{
+    text-align: center;
+    position: relative;
+    top: 128px;
+    
+}
+
+#show {
+    background-color: #fffcfa;
+    display: none;  
+	min-height: 592px;
+    padding-top: 3%;
+    padding-bottom: 2%;
 }
 
 
 #about{
-     height: 1024px;
-    background: red;
+
+    background: cornsilk;
+    padding-top: 3%;
+    padding-bottom: 2%; 
 }
 
-#feedingPlan {
-    height: 500px;
-    background: blue;
-    display: none;  
+
+
+.data-content{
+    float: left;
 }
 
+.info-content{
+    float: right;
+    text-align: justify;
+}
+
+
+.message-content{
+    width: 100%;
+    float: left;
+}
+
+.message-content >input{
+    width: 100%;
+    height: 100px;
+    background: #fafafa;
+    border: 1px solid #000;
+}
+
+.data-content >input{
+    background: #fafafa;
+    border: 1px solid #000;
+    width: 80%;
+    
+}
+
+.info-content{
+    margin-top: 45%;
+}
+
+.message-content button{
+  margin-top: 2%;
+  color: #fff;
+  background-color: #99843D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.message-content button:hover {background-color: #6C82A6}
+
+.border {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 1px;
+    height: 80%;
+    border-right: 1px solid #d1b18b;
+}
+
+#table-feeding .table, td,th{
+	border: 2px solid #f78f1e;
+	text-align: center;
+    padding: 8px;
+	border-collapse: collapse;
+    background-color: #fffecc;
+    font-family: 'Lato Light Italic';
+}
+
+th{
+    border: 2px solid #874e07;
+    font-family: 'Lato Light Italic';
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #d2b18a;    
+}
+
+
+#table-feeding td {
+/* Behave like a "row" */
+border: none;
+border-bottom: 1px solid #f78f1e;
+position: relative;
+padding-left: 5%;
+white-space: normal;
+text-align:left;
+}
+
+@media only screen and (max-width: 800px) {
+
+#table-exercise{
+	
+	display: block;
+}
+
+#table-exercise thead,
+#table-exercise tbody,
+#table-exercise th,
+#table-exercise td,
+#table-exercise tr {
+	
+	display: block;
+}
+
+#table-exercise thead tr {
+position: absolute;
+top: -9999px;
+left: -9999px;
+}
+
+#table-exercise tr { border: 1px solid #d1b18b; }
+
+
+
+#table-exercise td {
+/* Behave like a "row" */
+border: none;
+border-bottom: 1px solid #f78f1e;
+position: relative;
+padding-left: 5%;
+white-space: normal;
+text-align:left;
+}
+    
+
+#h > tbody > tr:hover{background-color:white}
+#h > tbody > tr:hover{background-color:orangered}
